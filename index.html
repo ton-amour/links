@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ton Amour | Maison Florale & Chocolatería</title>
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400&family=Inter:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-black: #000000;
+            --primary-white: #FFFFFF;
+            --primary-cream: #F9F6F2;
+            --secondary-rose-gold: #B76E79;
+            --secondary-soft-pink: #F4E1E1;
+            --secondary-deep-chocolate: #3D2B1F;
+        }
+
+        body {
+            background-color: var(--primary-cream);
+            color: var(--primary-black);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-black);
+            color: var(--primary-white);
+            border-radius: 0px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
+            border: 1px solid var(--primary-black);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--primary-black);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-black);
+            border: 1px solid var(--primary-black);
+            border-radius: 0px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-black);
+            color: var(--primary-white);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo-container {
+            max-width: 216px;
+            margin: 0 auto;
+        }
+
+        .social-icon {
+            transition: opacity 0.3s ease;
+            opacity: 0.4;
+        }
+
+        .social-icon:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center px-6 py-12">
+
+    <!-- Encabezado / Logo -->
+    <header class="text-center mb-6 fade-in">
+        <div class="logo-container">
+            <img 
+                src="logo1.png" 
+                alt="Ton Amour Logo" 
+                class="w-full h-auto"
+                onerror="this.style.display='none'; document.getElementById('fallback-title').style.display='block';"
+            >
+        </div>
+        <div id="fallback-title" style="display:none;">
+            <h1 class="text-4xl mb-2">Ton Amour</h1>
+        </div>
+    </header>
+
+    <!-- Sección de Concepto -->
+    <section class="max-w-md w-full text-center mb-12 fade-in" style="animation-delay: 0.2s;">
+        <p class="text-[10px] font-normal leading-relaxed opacity-80 tracking-[0.15em] uppercase">
+            CHOCOLATERÍA | REGALOS BOGOTÁ
+        </p>
+    </section>
+
+    <!-- Contenedor de Enlaces Actualizados -->
+    <main class="max-w-md w-full space-y-4 fade-in" style="animation-delay: 0.4s;">
+        
+        <a href="http://www.tonamour.lat/" target="_blank" class="btn-primary w-full py-4 px-8 block text-center text-[11px]">
+            Página web
+        </a>
+
+        <a href="https://invitaciónnew.my.canva.site/catalogomayorista" target="_blank" class="btn-secondary w-full py-4 px-8 block text-center text-[11px]">
+            Catálogo corporativo
+        </a>
+
+        <!-- Enlace de Whatsapp actualizado -->
+        <a href="https://wa.me/3053987938" target="_blank" class="btn-secondary w-full py-4 px-8 block text-center text-[11px]">
+            Whatsapp
+        </a>
+
+        <a href="https://rappi.app.link/Ton_Amour_Chocolatier" target="_blank" class="btn-secondary w-full py-4 px-8 block text-center text-[11px]">
+            Nuestra tienda en Rappi
+        </a>
+
+        <a href="https://www.rappi.com.co/restaurantes/900250808-ton-amour-chocolatier" target="_blank" class="btn-secondary w-full py-4 px-8 block text-center text-[11px]">
+            Compra en Rappi como Restaurante
+        </a>
+
+    </main>
+
+    <!-- Enlaces a Redes Sociales -->
+    <footer class="mt-auto pt-20 text-center fade-in" style="animation-delay: 0.6s;">
+        <div class="flex justify-center items-center space-x-8 mb-8">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/tonamour_bog/" target="_blank" class="social-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.849-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849s.012-3.584.07-4.849c.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.058-1.28.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.28-.058-1.69-.072-4.949-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/REGALOSTONAMOUR/" target="_blank" class="social-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.324v-21.35c0-.732-.593-1.325-1.323-1.325z"/></svg>
+            </a>
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@tonamour.bog" target="_blank" class="social-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.59-1.01V14.5c.03 2.16-.62 4.41-2.22 5.91-1.55 1.51-3.83 2.15-5.94 1.8-2.26-.35-4.32-1.99-5.12-4.14-.94-2.45-.44-5.46 1.38-7.44 1.55-1.75 4.14-2.43 6.36-1.63v4.13c-1.13-.44-2.48-.25-3.41.56-.88.75-1.14 2.06-.69 3.1.41 1.05 1.59 1.73 2.7 1.63 1.33-.11 2.4-1.32 2.43-2.65V.02z"/></svg>
+            </a>
+        </div>
+        <p class="text-[9px] uppercase tracking-[0.3em] opacity-30">Ton Amour &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
