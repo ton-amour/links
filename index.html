@@ -33,8 +33,8 @@
         }
 
         .btn-primary {
-            background-color: var(--primary-black);
-            color: var(--primary-white);
+            background-color: transparent;
+            color: var(--primary-black);
             border-radius: 0px;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -43,9 +43,15 @@
             border: 1px solid var(--primary-black);
         }
 
-        .btn-primary:hover {
-            background-color: transparent;
+        .btn-primary:visited {
             color: var(--primary-black);
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus-visible,
+        .btn-primary:active {
+            background-color: var(--primary-black);
+            color: var(--primary-white);
         }
 
         .btn-secondary {
@@ -108,7 +114,7 @@
     <!-- Sección de Concepto -->
     <section class="max-w-md w-full text-center mb-12 fade-in" style="animation-delay: 0.2s;">
         <p class="text-[10px] font-normal leading-relaxed opacity-80 tracking-[0.15em] uppercase">
-            CHOCOLATERÍA | REGALOS BOGOTÁ
+            FLORISTERÍA PRESERVADA | REGALOS BOGOTÁ
         </p>
     </section>
 
@@ -133,7 +139,7 @@
         </a>
 
         <a href="https://www.rappi.com.co/restaurantes/900250808-ton-amour-chocolatier" target="_blank" class="btn-secondary w-full py-4 px-8 block text-center text-[11px]">
-            Compra en Rappi como Restaurante
+            Rappi cobertura extendida
         </a>
 
     </main>
@@ -156,6 +162,8 @@
         </div>
         <p class="text-[9px] uppercase tracking-[0.3em] opacity-30">Ton Amour &copy; 2025</p>
     </footer>
+
+    <a href="https://docs.google.com/forms/d/19MBTH6COMKQpptKdqeSTvzj6HyLRSrtesjOJRCygUpE/edit" target="_blank" rel="noopener noreferrer" style="display:none;">Formulario interno</a>
 
 </body>
 </html>
